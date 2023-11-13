@@ -31,7 +31,7 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg fixed-top">
+  <nav class="navbar navbar-expand-lg fixed-top navbar-hover">
     <div class="container-fluid">
       <a class="nav-head font-weight-bold" href="#"><i class='bx bx-code-alt'></i></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -41,7 +41,7 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link active me-2 " aria-current="page" href="#">home</a>
+            <a class="nav-link active me-2 " aria-current="page" href="index.html">home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active me-2" href="#about"><span>about</span></a>
@@ -63,9 +63,9 @@
   <!-- main page left-side -->
 
   <div class="container main-page mt-5 text-white">
-    <div class="row">
-      <div class="col-lg-11">
-        <span class="par">I'm a</span>
+    <div class="row mt-5 pt-5 pb-5">
+      <div class="col-lg-11 mt-5">
+        <span class="par mt-5">I'm a</span>
         <h1 class="main-title pb-3">Full Stack Software Developer</h1>
         <button class="btn btn-projects">Previous Projects</button>
       </div>
@@ -78,14 +78,13 @@
     <section id="about"></section>
   </main>
   <div class="container pt-5 pb-5 text-white">
-    <div class="row">
-      <h1 class="text-dark text-center pb-5">About</h1>
+    <div class="row float-right">
       <div class="col-lg-6">
         <img src="img/sinan.png" alt="" class="img-fluid">
       </div>
-
       <div class="col-lg-6 pt-5">
-        <p class="text-dark">I am <span class="text-white">Sinan Kodur</span>, I'm a web developer based in
+        <h1 class="text-dark pb-2">About Me</h1>
+        <p class="text-dark pt-2">I am <span class="text-white">Sinan Kodur</span>, I'm a web developer based in
           Kerala,India. I have developed many types of
           front-ends and back-ends from well know applications to Ecommerce booking platforms.
           I'm passionate about cutting-edge, pixel-perfect, beautiful interfaces. It has survived not only five
@@ -108,7 +107,7 @@
     <div class="row ms-auto">
       <div class="col-lg-5 pb-4">
         <div class="card shadow-lg rounded zoom-on-hover">
-          <img src="Img/web dev.svg" class="card-img-top img-fluid" alt="...">
+          <img src="Img/web dev.svg" class="img-fluid" alt="...">
           <div class="card-body">
             <h5 class="card-title text-center">Web Development</h5>
             <p class="card-text text-center">
@@ -122,7 +121,7 @@
 
       <div class="col-lg-5 pb-4">
         <div class="card shadow-lg rounded zoom-on-hover">
-          <img src="Img/web des.svg" class="card-img-top img-fluid" alt="...">
+          <img src="Img/web des.svg" class="img-fluid" alt="...">
           <div class="card-body">
             <h5 class="card-title text-center">Web Design</h5>
             <p class="card-text text-center">
@@ -138,7 +137,7 @@
     <div class="row ms-auto">
       <div class="col-lg-5 pb-4">
         <div class="card shadow-lg rounded zoom-on-hover">
-          <img src="Img/mobile app.svg" class="card-img-top img-fluid" alt="...">
+          <img src="Img/mobile app.svg" class=" img-fluid" alt="...">
           <div class="card-body">
             <h5 class="card-title text-center">Mobile App Development</h5>
             <p class="card-text text-center">We bring your app idea to life with seamless user
@@ -152,8 +151,8 @@
       <div class="col-lg-2"></div>
 
       <div class="col-lg-5 pb-5">
-        <div class="card shadow-lg rounded zoom-on-hover" onclick="return GetQuote()">
-          <img src="Img/blog.svg" class="card-img-top img-fluid" alt="...">
+        <div class="card shadow-lg rounded zoom-on-hover">
+          <img src="Img/blog.svg" class=" img-fluid" alt="...">
           <div class="card-body">
             <h5 class="card-title text-center">Blog Websites</h5>
             <p class="card-text text-center">
@@ -227,7 +226,7 @@
   <div class="container pb-5 pt-3 ">
     <h1 class="text-dark text-center mb-5 mt-5">Contact</h1>
     <div class="row pt-5">
-      <div class="col-mg-5">
+      <div class="col-lg-5">
         <h3 class="text-dark">Drop Me a Message</h3>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, exercitationem dicta! Dolorum doloremque
           quae officia!</p><br>
@@ -243,15 +242,13 @@
       
 
       <div class="col-lg-2"></div>
-      <br>
       <div class="col-lg-5 pt-3">
         <div class="trans-card">
-          <form name="myForm" onsubmit="return validateForm()" action="https://formsubmit.co/sinankodur24@gmail.com"
-            method="post">
+          <form action="https://formsubmit.co/sinankodur24@gmail.com" method="post">
             <div class="mb-3 pb-3 text-white">
-              <input type="text" name="fname" id="name" class="form-control" placeholder="Name" required><br>
-              <input type="number" name="number" id="number" class="form-control" placeholder="Number" required><br>
-              <textarea class="form-control" id="comment" name="comment" placeholder="Comment" required></textarea>
+              <input type="text" class="form-control" placeholder="Name" required><br>
+              <input type="number" class="form-control" placeholder="Number" required><br>
+              <textarea class="form-control" placeholder="Comment" required></textarea>
             </div>
             <button type="submit" class="btn btn-secondary rounded">Send</button>
           </form>
@@ -262,8 +259,8 @@
 
   <div class="container pb-2 text-center text-secondary">
     <div class="row">
-      <hr>
-      <div class="col-lg-5 mt-2 ms-auto">
+      <hr class="text-dark">
+      <div class="col-lg-5 mt-2  ms-auto">
         Copyright &copy; 2023 sinankodur - All rights reserved.
       </div>
 

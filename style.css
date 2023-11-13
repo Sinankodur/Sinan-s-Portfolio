@@ -13,13 +13,8 @@ body {
     text-decoration: none;
 }
 
-.nav-item a:hover{
-    color: red;
-}
-
-.main-page {
-    padding-top: 6rem;
-    padding-bottom: 4.5rem;
+.navbar-hover:hover{
+    color: aqua;
 }
 
 .par{
