@@ -1,10 +1,10 @@
 body {
     font-family: 'Gabarito', cursive;
-    background-image: linear-gradient(rgba(1, 70, 84, 0.865),rgb(51, 117, 240),rgb(128, 158, 218));
+    background-image: linear-gradient(#58595a,#909295,white,#d3d8ed);
 }
 
 .navbar {
-    background-color: rgba(31, 128, 189, 0.902)
+    background-color: rgba(62, 78, 88, 0.902)
 }
 
 .nav-head {
@@ -13,8 +13,8 @@ body {
     text-decoration: none;
 }
 
-.navbar-hover:hover{
-    color: aqua;
+.nav-link:hover{
+    color: #baeeee;
 }
 
 .par{
@@ -24,7 +24,8 @@ body {
 
 .main-title{
     font-size: 7.7rem;
-    line-height: 5.7rem;
+    line-height: 5.9rem;
+    max-width: 35rem;
 }
 
 .btn-projects{
@@ -80,4 +81,12 @@ body {
 
 .btn-social{
     background-image: linear-gradient(rgb(97, 97, 250),rgb(51, 51, 165));
+}
+
+.btn-social a {
+    color: white;
+}
+
+.btn-social :hover{
+    color: rgba(0, 0, 0, 0.661);
 }
